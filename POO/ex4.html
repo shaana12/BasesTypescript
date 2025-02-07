@@ -1,0 +1,30 @@
+//////// MANIPULATION DU DOM ////////////
+
+// Changer le contenu d'un element html via javascript
+
+// modifier le style d'un element avec .style
+
+//Ajouter un evenement onclick sur un bouton
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1 id="style">Je vais changer de style</h1>
+    <button onclick="changerStyle()">Changer le style</button>
+
+<script>
+    function changerStyle () {
+        let element = document.getElementById("style");
+        element.style.color = "red";
+        element.style.fontSize = "20px";
+        element.style.fontWeight = "bold";
+    }
+</script>
+
+</body>
+</html>
